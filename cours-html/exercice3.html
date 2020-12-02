@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Carthageo - Exercice 3</title>
+  <meta name="description" content="Première page web">
+  <meta charset="UTF-8" />
+  <style>
+    header {
+      background-color: orange;
+      color: #332233;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .contenu {
+      border-bottom: 2px solid black;
+    }
+
+    .red {
+      border-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Carthageo 2020</h1>
+    <h2><em>Cours</em> de webmapping</h2>
+  </header>
+
+  <div id="menu" class="contenu">
+    <ul>
+      <li class="menu-item">Le programme</li>
+      <li class="menu-item"><a href="#prof">Les intervants</a></li>
+      <li class="menu-item">Les étudiants</li>
+      <li class="menu-item"><a href="#form">Formulaire</a></li>
+    </ul>
+  </div>
+
+  <div class="contenu red">
+    <h4>Le programme du cours :</h4>
+    <ol>
+      <li>Les bases du web</li>
+      <li>HTML
+        <ul>
+          <li>Principes</li>
+          <li>Les balises (en cours)</li>
+        </ul>
+      </li>
+      <li>CSS (à venir)</li>
+    </ol>
+  </div>
+
+  <div class="contenu" id="prof">
+    <h4>Les intervenants</h4>
+    <p>"🎼Bonjour, je me présente, je m'appelle Clément 🎼"</p>
+  </div>
+
+  <div class="contenu">
+    <h4>Les étudiants</h4>
+    <p>
+      Ils sont très patient jusqu'ici.
+    </p>
+    <p>
+      Le cours est disponible en ligne
+      <a href="https://ensg_dei.gitlab.io/web-az/html/balises/" title="lien vers le cours">
+        ici
+      </a>
+    </p>
+  </div>
+
+  <div id="form" class="contenu">
+    <h4>Formulaire de contact</h4>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Identité</legend>
+        <p>
+          <label>Sucré<input type="radio" name="preference"></label>
+          <label>Salé<input type="radio" name="preference"></label>
+        </p>
+        <p><label>Login: <input type="text" name="username"></label></p>
+        <p><label>Mot de passe: <input type="password" name="username"></label></p>
+      </fieldset>
+      <input type="submit" value="Ok">
+    </form>
+  </div>
+
+  <footer>
+    <table>
+      <tr>
+        <td>Réalisé par Clément Bouché</td>
+        <td>@Carthagéo</td>
+        <td>2020</td>
+      </tr>
+    </table>
+  </footer>
+
+</body>
+</html>
