@@ -20,6 +20,10 @@ a {
 a:hover {
   color: #004ba0;
 }
+.note {
+  font-size: 10px;
+  color: grey;
+}
 body {
   margin: auto;
 }
@@ -58,8 +62,16 @@ header > * {
   width: 15px;
   height: 15px;
   background: url("https://images.math.cnrs.fr/IMG/png/section8-image.png");
+  filter: grayscale(100%);
   background-size: cover;
   border-radius: 50%;
+}
+/* mettre en indice la référence à la note de bas de page */
+#menu a span {
+  position: relative;
+  font-size: 75%;
+  top: -0.5em;
+  color: grey;
 }
 footer {
   margin-top: 15px;
@@ -90,4 +102,75 @@ footer td:last-child {
   border: 1px solid black;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
   outline: none;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 50px;
+}
+header {
+  grid-column: 1 / span 2;
+}
+#menu {
+  display: none;
+  grid-column: 1;
+  grid-row: 2;
+}
+#contenu {
+  grid-column: 1;
+}
+footer {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#contenu {
+  display: grid;
+  grid-template-columns: 33% 1fr 33%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin: 0 10px;
+  max-width: 800px;
+}
+.student {
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+  border-radius: 5px;
+}
+.student:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+}
+.student h4 {
+  text-align: center;
+}
+.student.capu {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.clem {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.ludo {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.magg {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.marc {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.mehdi {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.nina {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.tanya {
+  background: rgba(255, 0, 149, 0.342);
+}
+.student.young {
+  background: rgba(255, 0, 149, 0.342);
 }
