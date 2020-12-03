@@ -1,0 +1,33 @@
+html {
+  background: white;
+}
+body {
+  background: rgba(255, 166, 0, 0.116);
+  width: 90%;
+  margin: auto;
+}
+header {
+  /* marge externe */
+  margin-bottom: 30px;
+  /* marge interne */
+  padding: 15px;
+  background-color: rgba(255, 166, 0, 0.685);
+}
+#menu {
+  width: 220px;
+  background-color: rgba(0, 132, 255, 0.685);
+  /* marge interne */
+  padding: 10px;
+}
+#menu li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#menu li,
+#menu a {
+  color: rgb(5, 18, 31);
+  text-decoration: none;
+}
+#menu a:hover {
+  color: brown;
+}

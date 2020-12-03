@@ -1,4 +1,79 @@
+/* tous les éléments contenus dans html auront la police Arial */
+html {
+  font-family: "Roboto", Arial;
+  color: rgb(39, 39, 39);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+a:hover {
+  color: #004ba0;
+}
 body {
   margin: auto;
-  background-color: lightblue;
+}
+header {
+  /* boite */
+  background: linear-gradient(90deg, #1976d2a4, #0f61be);
+  border-bottom: 3px solid #c55f0073;
+  margin-bottom: 15px;
+  /* police et text */
+  text-align: center;
+}
+header > * {
+  margin: 0;
+  padding: 0;
+}
+#menu {
+  /* boite */
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0.356);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffc146cb;
+}
+#menu ul {
+  list-style: none;
+  padding-left: 10px;
+}
+#menu ul ul {
+  padding-left: 15px;
+}
+#menu ul ul li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("https://images.math.cnrs.fr/IMG/png/section8-image.png");
+  background-size: cover;
+  border-radius: 50%;
+}
+footer {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #1976d2a4, #0f61be);
+}
+footer table {
+  margin: auto;
+}
+footer td {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: 2px solid #c56000;
+  color: white;
+}
+footer td:last-child {
+  border-width: 0px;
 }
